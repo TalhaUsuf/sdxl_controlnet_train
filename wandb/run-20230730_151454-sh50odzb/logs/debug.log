@@ -1,0 +1,28 @@
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_setup.py:_flush():76] Current SDK version is 0.15.7
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_setup.py:_flush():76] Configure stats pid to 4961
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_setup.py:_flush():76] Loading settings from /home/sabbih/.config/wandb/settings
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_setup.py:_flush():76] Loading settings from /home/sabbih/deep_fashion/train_sdxl_controlnet/wandb/settings
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'deep_fashion/train_sdxl_controlnet/train.py', 'program': '/home/sabbih/deep_fashion/train_sdxl_controlnet/train.py'}
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_init.py:_log_setup():507] Logging user logs to /home/sabbih/deep_fashion/train_sdxl_controlnet/wandb/run-20230730_151454-sh50odzb/logs/debug.log
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_init.py:_log_setup():508] Logging internal logs to /home/sabbih/deep_fashion/train_sdxl_controlnet/wandb/run-20230730_151454-sh50odzb/logs/debug-internal.log
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_init.py:init():547] calling init triggers
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_init.py:init():596] starting backend
+2023-07-30 15:14:54,505 INFO    MainThread:4961 [wandb_init.py:init():600] setting up manager
+2023-07-30 15:14:54,506 INFO    MainThread:4961 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-30 15:14:54,507 INFO    MainThread:4961 [wandb_init.py:init():606] backend started and connected
+2023-07-30 15:14:54,508 INFO    MainThread:4961 [wandb_init.py:init():697] updated telemetry
+2023-07-30 15:14:54,511 INFO    MainThread:4961 [wandb_init.py:init():730] communicating run to backend with 60.0 second timeout
+2023-07-30 15:14:54,827 INFO    MainThread:4961 [wandb_run.py:_on_init():2174] communicating current version
+2023-07-30 15:14:54,883 INFO    MainThread:4961 [wandb_run.py:_on_init():2183] got version response 
+2023-07-30 15:14:54,883 INFO    MainThread:4961 [wandb_init.py:init():781] starting run threads in backend
+2023-07-30 15:14:57,801 INFO    MainThread:4961 [wandb_run.py:_console_start():2153] atexit reg
+2023-07-30 15:14:57,801 INFO    MainThread:4961 [wandb_run.py:_redirect():2008] redirect: wrap_raw
+2023-07-30 15:14:57,801 INFO    MainThread:4961 [wandb_run.py:_redirect():2073] Wrapping output streams.
+2023-07-30 15:14:57,801 INFO    MainThread:4961 [wandb_run.py:_redirect():2098] Redirects installed.
+2023-07-30 15:14:57,802 INFO    MainThread:4961 [wandb_init.py:init():822] run started, returning control to user process
+2023-07-30 15:14:57,802 INFO    MainThread:4961 [wandb_run.py:_config_callback():1282] config_cb None None {'pretrained_model_name_or_path': 'stabilityai/stable-diffusion-xl-base-1.0', 'pretrained_vae_model_name_or_path': None, 'controlnet_model_name_or_path': None, 'revision': None, 'tokenizer_name': None, 'output_dir': 'controlnet_sdxl_lineart', 'cache_dir': None, 'seed': 42, 'resolution': 1024, 'crops_coords_top_left_h': 0, 'crops_coords_top_left_w': 0, 'train_batch_size': 8, 'num_train_epochs': 5, 'max_train_steps': 2200, 'checkpointing_steps': 100, 'checkpoints_total_limit': 5, 'resume_from_checkpoint': None, 'gradient_accumulation_steps': 1, 'gradient_checkpointing': False, 'learning_rate': 1e-05, 'scale_lr': False, 'lr_scheduler': 'constant', 'lr_warmup_steps': 500, 'lr_num_cycles': 1, 'lr_power': 1.0, 'use_8bit_adam': False, 'dataloader_num_workers': 0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_weight_decay': 0.01, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'push_to_hub': False, 'hub_token': None, 'hub_model_id': None, 'logging_dir': 'logs', 'allow_tf32': False, 'report_to': 'wandb', 'mixed_precision': None, 'enable_xformers_memory_efficient_attention': False, 'set_grads_to_none': False, 'dataset_name': 'zbulrush/lineart', 'dataset_config_name': None, 'train_data_dir': None, 'image_column': 'image', 'conditioning_image_column': 'conditioning_image', 'caption_column': 'text', 'max_train_samples': None, 'proportion_empty_prompts': 0, 'num_validation_images': 4, 'validation_steps': 100, 'tracker_project_name': 'sd_xl_train_controlnet'}
+2023-07-30 15:15:43,375 WARNING MsgRouterThr:4961 [router.py:message_loop():77] message_loop has been closed

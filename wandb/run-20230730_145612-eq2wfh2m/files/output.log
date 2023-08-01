@@ -1,0 +1,48 @@
+07/30/2023 14:56:15 - INFO - __main__ - ***** Running training *****
+07/30/2023 14:56:15 - INFO - __main__ -   Num examples = 3516
+07/30/2023 14:56:15 - INFO - __main__ -   Num batches each epoch = 55
+07/30/2023 14:56:15 - INFO - __main__ -   Num Epochs = 5
+07/30/2023 14:56:15 - INFO - __main__ -   Instantaneous batch size per device = 16
+07/30/2023 14:56:15 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 64
+07/30/2023 14:56:15 - INFO - __main__ -   Gradient Accumulation steps = 1
+07/30/2023 14:56:15 - INFO - __main__ -   Total optimization steps = 275
+Steps:   0%|                                                                                                | 0/275 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/sabbih/deep_fashion/train_sdxl_controlnet/train.py", line 1253, in <module>
+    main(args)
+  File "/home/sabbih/deep_fashion/train_sdxl_controlnet/train.py", line 1147, in main
+    down_block_res_samples, mid_block_res_sample = controlnet(
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sabbih/.local/lib/python3.10/site-packages/accelerate/utils/operations.py", line 581, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/sabbih/.local/lib/python3.10/site-packages/accelerate/utils/operations.py", line 569, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 14, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/sabbih/diffusers/src/diffusers/models/controlnet.py", line 774, in forward
+    sample = self.mid_block(
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sabbih/diffusers/src/diffusers/models/unet_2d_blocks.py", line 614, in forward
+    hidden_states = attn(
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sabbih/diffusers/src/diffusers/models/transformer_2d.py", line 292, in forward
+    hidden_states = block(
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sabbih/diffusers/src/diffusers/models/attention.py", line 168, in forward
+    self.norm2(hidden_states, timestep) if self.use_ada_layer_norm else self.norm2(hidden_states)
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/modules/normalization.py", line 190, in forward
+    return F.layer_norm(
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/nn/functional.py", line 2515, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 80.00 MiB (GPU 0; 79.33 GiB total capacity; 77.65 GiB already allocated; 31.38 MiB free; 77.98 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

@@ -1,0 +1,196 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    code_path: code/deep_fashion/train_sdxl_controlnet/train.py
+    python_version: 3.10.12
+    cli_version: 0.15.7
+    framework: huggingface
+    huggingface_version: 4.31.0
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    start_time: 1690754227.036765
+    t:
+      1:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 51
+      - 55
+      - 71
+      - 83
+      2:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 51
+      - 55
+      - 71
+      - 83
+      3:
+      - 23
+      4: 3.10.12
+      5: 0.15.7
+      6: 4.31.0
+      8:
+      - 2
+      - 5
+pretrained_model_name_or_path:
+  desc: null
+  value: stabilityai/stable-diffusion-xl-base-1.0
+pretrained_vae_model_name_or_path:
+  desc: null
+  value: null
+controlnet_model_name_or_path:
+  desc: null
+  value: null
+revision:
+  desc: null
+  value: null
+tokenizer_name:
+  desc: null
+  value: null
+output_dir:
+  desc: null
+  value: sdxl_control_lineart
+cache_dir:
+  desc: null
+  value: null
+seed:
+  desc: null
+  value: 42
+resolution:
+  desc: null
+  value: 1024
+crops_coords_top_left_h:
+  desc: null
+  value: 0
+crops_coords_top_left_w:
+  desc: null
+  value: 0
+train_batch_size:
+  desc: null
+  value: 8
+num_train_epochs:
+  desc: null
+  value: 5
+max_train_steps:
+  desc: null
+  value: 550
+checkpointing_steps:
+  desc: null
+  value: 500
+checkpoints_total_limit:
+  desc: null
+  value: 5
+resume_from_checkpoint:
+  desc: null
+  value: null
+gradient_accumulation_steps:
+  desc: null
+  value: 1
+gradient_checkpointing:
+  desc: null
+  value: false
+learning_rate:
+  desc: null
+  value: 1.0e-05
+scale_lr:
+  desc: null
+  value: false
+lr_scheduler:
+  desc: null
+  value: constant
+lr_warmup_steps:
+  desc: null
+  value: 500
+lr_num_cycles:
+  desc: null
+  value: 1
+lr_power:
+  desc: null
+  value: 1.0
+use_8bit_adam:
+  desc: null
+  value: false
+dataloader_num_workers:
+  desc: null
+  value: 0
+adam_beta1:
+  desc: null
+  value: 0.9
+adam_beta2:
+  desc: null
+  value: 0.999
+adam_weight_decay:
+  desc: null
+  value: 0.01
+adam_epsilon:
+  desc: null
+  value: 1.0e-08
+max_grad_norm:
+  desc: null
+  value: 1.0
+push_to_hub:
+  desc: null
+  value: false
+hub_token:
+  desc: null
+  value: null
+hub_model_id:
+  desc: null
+  value: null
+logging_dir:
+  desc: null
+  value: logs
+allow_tf32:
+  desc: null
+  value: false
+report_to:
+  desc: null
+  value: wandb
+mixed_precision:
+  desc: null
+  value: null
+enable_xformers_memory_efficient_attention:
+  desc: null
+  value: false
+set_grads_to_none:
+  desc: null
+  value: false
+dataset_name:
+  desc: null
+  value: zbulrush/lineart
+dataset_config_name:
+  desc: null
+  value: null
+train_data_dir:
+  desc: null
+  value: null
+image_column:
+  desc: null
+  value: image
+conditioning_image_column:
+  desc: null
+  value: conditioning_image
+caption_column:
+  desc: null
+  value: text
+max_train_samples:
+  desc: null
+  value: null
+proportion_empty_prompts:
+  desc: null
+  value: 0
+num_validation_images:
+  desc: null
+  value: 4
+validation_steps:
+  desc: null
+  value: 100
+tracker_project_name:
+  desc: null
+  value: sd_xl_train_controlnet

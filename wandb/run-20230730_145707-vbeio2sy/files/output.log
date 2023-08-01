@@ -1,0 +1,20 @@
+07/30/2023 14:57:10 - INFO - __main__ - ***** Running training *****
+07/30/2023 14:57:10 - INFO - __main__ -   Num examples = 3516
+07/30/2023 14:57:10 - INFO - __main__ -   Num batches each epoch = 110
+07/30/2023 14:57:10 - INFO - __main__ -   Num Epochs = 5
+07/30/2023 14:57:10 - INFO - __main__ -   Instantaneous batch size per device = 8
+07/30/2023 14:57:10 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 32
+07/30/2023 14:57:10 - INFO - __main__ -   Gradient Accumulation steps = 1
+07/30/2023 14:57:10 - INFO - __main__ -   Total optimization steps = 550
+Steps:   0%|                                                                                                | 0/550 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/sabbih/deep_fashion/train_sdxl_controlnet/train.py", line 1253, in <module>
+    main(args)
+  File "/home/sabbih/deep_fashion/train_sdxl_controlnet/train.py", line 1177, in main
+    accelerator.backward(loss)
+  File "/home/sabbih/.local/lib/python3.10/site-packages/accelerate/accelerator.py", line 1851, in backward
+    self.scaler.scale(loss).backward(**kwargs)
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/sabbih/anaconda3/envs/sd_training/lib/python3.10/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: GET was unable to find an engine to execute this computation
